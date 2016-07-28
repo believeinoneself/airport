@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	/*font-family: 'Microsoft Yahei', Tahoma, Arial, Simsun, sans-serif; */
+	font-family: arial,tahoma,'宋体b8b\4f53',sans-serif;
+	margin:0px;
+	padding:0px;
+	font-size: 14px;
+	background:#fff;
+}
+img{ border:0px;}
+ul{ list-style:none; margin:0px; padding:0px;}
+li{ list-style:none;}
+a{ text-decoration:none; color:#000;}
+select{background:#fff; border:1px solid #ccc; height:25px; width:150px; padding:3px;}
+.sysname{font-size:24px; display:block; width:500px; height:60px; line-height:60px;}
+.menu_li{background:#f1f1f1; height:40px; border-bottom:1px solid #dedede; text-align:center; line-height:40px;}
+.menu_li a{ display:block; height:40px;}
+.menu_li a:hover{ border-right:3px solid #73c1d5;}
+.menu_li_ed{background:#f1f1f1; height:40px; border-bottom:1px solid #dedede; text-align:center; line-height:40px; border-right:3px solid #73c1d5;}
+.header{height:60px; background:#fff; border-bottom:7px solid #dedede;}
+.h_right{float:right; width:200px; text-align:right;}
+.c_left{width:180px; height:600px; background:#f9f9f9; float:left;}
+.user{width:30px; height:30px; padding:10px 15px; display:block; float:left;}
+.user_name{display:block; line-height:50px; height:50px;}
+.r_top{height:50px; background:#b9e3f1; padding-left:180px;}
+*+html .r_top{padding-left:0px;}
+.r_top span{display:block; height:50px; line-height:50px; padding-left:20px; font-size:20px; color:#333;}
+.r_content{padding-left:200px; padding-top:20px;}
+.input_pwd{width:200px; height:25px; line-height:25px; background:#fff; border:1px solid #aaa; border-top:2px solid #999;}
+.btn_sub{background:#73c1d5; padding:5px 10px; border:0px; color:#fff; cursor:pointer; border-radius:3px;}
+*+html .btn_sub{padding:7px 13px;}
+.input_text{height:25px; line-height:25px; background:#fff; border:1px solid #aaa; border-top:2px solid #999;}
+.btn_jia{background:url(../images/jia.png) no-repeat center center; width:20px; height:20px; border:0px; cursor:pointer;}
+.btn_jian{background:url(../images/jian.png) no-repeat center center; width:15px; height:15px; border:0px; cursor:pointer;}
