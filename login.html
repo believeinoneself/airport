@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统-登录</title>
+<link rel="stylesheet" href="css/global.css" type="text/css"/>
+<script src="js/jquery-1.4.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#username').focus();
+});
+function checkform(){
+	var msg = '&nbsp;';
+	var flag = true;
+	var user = $('#username').val();
+	var pwd = $('#password').val();
+	user = $.trim(user);
+	pwd = $.trim(pwd);
+	if(user.length == 0){
+		msg = '账号不能为空！';
+		flag = false;
+	}else if(pwd.length == 0){
+		msg = '密码不能为空！';
+		flag = false;	
+	}
+	$('.msg').html(msg);
+	return flag;
+}
+</script>
+</head>
+
+<body>
+<center>
+<div class="top">机场后台管理系统</div>
+<div class="login_c">
+	<div class="login_l"><img src="images/jichang1.png" /></div>
+	<div class="login_r">
+		<form method="post" action="index.html" style="margin:0px; padding:0px;" onsubmit="return checkform()">
+		<ul style="margin:0px; padding:0px;">
+			<li style="padding-bottom:15px;">账&nbsp;&nbsp;号&nbsp;&nbsp;<input type="text" name="username" id="username" class="login_input" /></li>
+			<li>密&nbsp;&nbsp;码&nbsp;&nbsp;<input type="password" name="password" id="password" class="login_input" /></li>
+			<li style="padding:5px 0px;">
+			<span class="msg">&nbsp;</span></li>
+			<li><input type="submit" value="登 录" class="login_sub" /></li>
+		</ul>
+		<input type="hidden" name="act" value="login">
+		</form>
+	</div>
+</div>
+<div class="copyright">Copyright © 2014</div>
+</center>
+</body>
+</html>
